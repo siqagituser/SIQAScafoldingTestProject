@@ -7,3 +7,66 @@ packages:
   gitUrl: https://github.com/siqagituser/SIQAScafoldingTestProject
   gitUsername: siqagituser
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.softwareag.com
+  wpmRegistry: softwareag
+services:
+- serviceName: project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:DatabaseNewAcc
+  packages:
+  - name: SIQAScafoldingTestProject
+    version: "1.0"
+- serviceName: project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: SIQAScafoldingTestProject
+    version: "1.0"
+- serviceName: project.siqascafoldingtest.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQAScafoldingTestProject
+    version: "1.0"
+configurationVariables:
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.databaseName
+  : SIQACloud
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.user
+  : sa
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionManagerSettings.minimumPoolSize
+  : "0"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.keyStore
+  : ""
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionEnabled
+  : "false"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.serverName
+  : vmiboint01
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.SIQAScafoldingTestProject.project.siqascafoldingtest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseNewAcc.connectionSettings.password
+  : "{AES}B2Xqma4Ost5nVUiXctJydQ=="
